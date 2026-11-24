@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-navy-950: #071120;
+  --color-navy-900: #0B1B32;
+  --color-navy-800: #12294A;
+  --color-navy-700: #1B3B68;
+  --color-navy-200: #CBD7E8;
+  --color-navy-100: #E8EEF6;
+  --color-navy-50: #F3F6FA;
+
+  --color-gold-700: #7C580B;
+  --color-gold-600: #9E7214;
+  --color-gold-500: #C59322;
+  --color-gold-400: #DFB349;
+  --color-gold-300: #ECCA76;
+  --color-gold-50: #FDF9EE;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+    --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+
+  .dark {
+    color-scheme: dark;
+  }
+
+  html,
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  code,
+  pre,
+  kbd,
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

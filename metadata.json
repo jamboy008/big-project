@@ -1,0 +1,6 @@
+{
+  "name": "ALJABR AI Business Operations Platform",
+  "description": "Korporativ AI Command Center: real-time streaming chat, ko'p tashkilotli suhbatlar tarixi, hujjat biriktirish va AI Tasks boshqaruv moduli.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
